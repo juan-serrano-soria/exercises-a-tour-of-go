@@ -6,14 +6,10 @@ import "golang.org/x/tour/pic"
 // filled with values calculated using a concrete function
 func Pic(dx, dy int) [][]uint8 {
 	
-	// Allocate two dimensional slice
+	// Allocate two dimensional slice and fill it with values calculated using xXORy
 	s := make([][]uint8, dy)
 	for i := range s {
 		s[i] = make([]uint8, dx)
-	}
-	
-	// fill the two dimensional slice with values calculated using xXORy func (bitwise operator)
-	for i := range s {
 		for j := range s[i] {
 			s[i][j] = uint8(i^j)
 		}
