@@ -28,7 +28,6 @@ func Sqrt(x float64) float64 {
 	for {
 		y -= (z*z - x) / (2*z)
 		
-		//fmt.Println(Abs(z -y))
 		if Abs(z - y) < sens  {
 			break
 		}
