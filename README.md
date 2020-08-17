@@ -7,3 +7,4 @@ I'm learning Golang, and these are my solutions to the exercises in "A Tour of G
 4. *exercise-fibonacci-closure.go* from https://tour.golang.org/moretypes/26
 5. *exercise-stringer.go* from https://tour.golang.org/methods/18
 6. *exercise-errors.go* from https://tour.golang.org/methods/20
+7. *exercise-reader.go* from https://tour.golang.org/methods/22
