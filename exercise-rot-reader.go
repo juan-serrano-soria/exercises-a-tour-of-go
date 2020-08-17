@@ -10,8 +10,8 @@ type rot13Reader struct {
 	r io.Reader
 }
 
-// Rot13 applies rot13 to b
-func Rot13(b byte) byte {
+// rot13 applies rot13 to b
+func rot13(b byte) byte {
 	switch {
 	// between A and M or between a and m
 	case (b > 64 && b < 78) || (b > 96 && b < 110):
@@ -23,10 +23,11 @@ func Rot13(b byte) byte {
 	return b
 }
 
+// Read implements a Reader that uses io.Reader and applies a rot13 to it
 func (rr *rot13Reader) Read(b []byte) (int, error) {
-    n, err := rr.Read(b)
+	n, err := rr.r.Read(b)
 	for i := range b {
-		b[1] = rot13(b[1])
+		b[i] = rot13(b[i])
 	}
 	return n, err
 }
