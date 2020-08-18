@@ -9,3 +9,4 @@ I'm learning Golang, and these are my solutions to the exercises in "A Tour of G
 6. *exercise-errors.go* from https://tour.golang.org/methods/20
 7. *exercise-reader.go* from https://tour.golang.org/methods/22
 8. *exercise-rot-reader.go* from https://tour.golang.org/methods/23
+9. *exercise-images.go* from https://tour.golang.org/methods/25
